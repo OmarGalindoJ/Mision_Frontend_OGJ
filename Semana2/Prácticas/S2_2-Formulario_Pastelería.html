@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(240, 154, 154);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 15%;
+            height: 150px;
+
+            background: rgb(241, 206, 160);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 85%;
+            background-color: #f3dce4;
+            height: 850px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: rgb(240, 154, 154);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="../Assets/Img/Logo_DulceGala.png" alt="Logo_DulceGala" width="200px">
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Nuestra variedad</a></li>
+                <li><a href="#">Pedidos y cotizaciones</a></li>
+            </ul>
+        </nav>
+
+    <article>
+
+    <h1>Cotiza tu pedido</h1>
+        <form action="pedido.js">
+            <label for="Nombre">Ingresa tu nombre</label><br>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+            <br>
+            <label for="Calle">Ingresa tu calle</label><br>
+            <input type="text" id="Calle" name="Calle" placeholder="Calle">
+            <br>
+            <label for="CP">Ingresa tu código postal</label><br>
+            <input type="text" id="CP" name="CP" placeholder="CP">
+            <br>
+            <label for="Telefono">Ingresa tu número telefónico</label><br>
+            <input type="text" id="Telefono" name="Telefono" placeholder="Telefono">
+            <br>
+            <label for="Correo">Ingresa tu correo electrónico</label><br>
+            <input type="text" id="Correo" name="Correo" placeholder="Correo">
+
+        <br><br>
+
+        <p>Elige tu pan</p>
+        <select name="Pan" id="Pan">
+            <option value="Vainilla">Vainilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Naranja">Naranja</option>
+        </select>
+        <br>
+        <p>Elige tu base</p>
+        <select name="Base" id="Base">
+            <option value="3leches">Tres leches</option>
+            <option value="Envinado">Envinado</option>
+            <option value="Americano">Americano</option>
+        </select>
+
+        <br><br>
+
+        <p>Elige los ingredientes de tu relleno</p>
+            <input type="checkbox" id="Fresas" name="Fresas" value="Fresas">
+            <label for="Fresas">Fresas</label>
+            <input type="checkbox" id="Duraznos" name="Duraznos" value="Duraznos">
+            <label for="Duraznos">Duraznos</label>
+            <input type="checkbox" id="Nueces" name="Nueces" value="Nueces">
+            <label for="Nueces">Nueces</label>
+            <input type="checkbox" id="MousseChocolate" name="MousseChocolate" value="MousseChocolate">
+            <label for="MousseChocolate">Mousse de Chocolate</label>
+            <input type="checkbox" id="MermeladaFresa" name="MermeladaFresa" value="MermeladaFresa">
+            <label for="MermeladaFresa">Mermelada de Fresa</label>
+            <input type="checkbox" id="DulceLeche" name="DulceLeche" value="DulceLeche">
+            <label for="DulceLeche">Dulce de leche</label>
+        <br><br>
+
+        <p>Elige los ingredientes de tu decorado</p>
+            <input type="checkbox" id="Chantilly" name="Chantilly" value="Chantilly">
+            <label for="Chantilly">Crema Chantilly</label>
+            <input type="checkbox" id="Fondant" name="Fondant" value="Fondant">
+            <label for="Fondant">Fondant</label>
+            <input type="checkbox" id="Glaseado" name="Glaseado" value="Glaseado">
+            <label for="Glaseado">Glaseado</label>
+            <input type="checkbox" id="Fresas" name="Fresas" value="Fresas">
+            <label for="Fresas">Fresas</label>
+            <input type="checkbox" id="Duraznos" name="Duraznos" value="Duraznos">
+            <label for="Duraznos">Duraznos</label>
+            <input type="checkbox" id="Nueces" name="Nueces" value="Nueces">
+            <label for="Nueces">Nueces</label>
+        <br><br>
+
+        <p>Elige el tamaño de tu pastel</p>
+            <input type="radio" id="Plancha1/8" name="Tamaños" value="Plancha1/8">
+            <label for="Plancha1/8">1/8 de plancha</label><br>
+            <input type="radio" id="Plancha1/4" name="Tamaños" value="Plancha1/4">
+            <label for="Plancha1/4">1/4 de plancha</label><br>
+            <input type="radio" id="Plancha1/2" name="Tamaños" value="Plancha1/2">
+            <label for="Plancha1/2">1/2 plancha</label><br>
+            <input type="radio" id="Plancha3/4" name="Tamaños" value="Plancha3/4">
+            <label for="Plancha3/4">3/4 de plancha</label><br>
+            <input type="radio" id="Plancha1" name="Tamaños" value="Plancha1">
+            <label for="Plancha1">Plancha completa</label><br>
+        <br><br>
+
+        <input type="reset">
+        <input type="submit">
+
+    </article>
+    </section>
+
+    </form>
+
+    <footer>
+        <h2>Contáctanos</h2>
+            <p>Domicilio</p>
+                Avenida México 5, Col. Las Américas, Naucalpan de Juárez, Estado de México.
+            <p>Ventas y cotizaciones:</p>
+                Lunes a Domingo: 8 a.m. – 5 p.m.
+                Teléfono: (55)-5345-2518 ext 139</p>
+            <p>Horarios de atención:</p>
+                Lunes a Sábado:  8 a.m. – 8 p.m.
+                Domingos: 9 a.m. – 8 p.m.               
+    </footer>
+
+</body>
+
+</html>

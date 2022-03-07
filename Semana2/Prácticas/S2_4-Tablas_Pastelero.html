@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(240, 154, 154);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 15%;
+            height: 150px;
+            background: rgb(241, 206, 160);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 85%;
+            background-color: #f3dce4;
+            height: 1050px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: rgb(240, 154, 154);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="../Assets/Img/Logo_DulceGala.png" alt="Logo_DulceGala" width="200px">
+    </header>
+
+    <h1>Intranet Dulce Gala</h1>
+
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Stock</a></li>
+                <li><a href="#">Tablas</a></li>
+            </ul>
+        </nav>
+
+    <article>
+
+
+    <h2>Tablas pedidos</h2>
+
+    <table>
+        <h3>Datos de contacto</h3>
+            <tr>
+                <th>ID pedido</th>
+                <th>Nombre</th>
+                <th>Calle</th>
+                <th>CP</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+
+            </tr>
+            <tr>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            </tr>
+    </table>
+
+    <table>
+        <h3>Datos del pedido</h3>
+            <tr>
+                <th>ID pedido</th>
+                <th>Pan</th>
+                <th>Base</th>
+                <th>Ingredientes del relleno</th>
+                <th>Ingredientes decorado</th>
+                <th>Tamaño</th>
+
+            </tr>
+            <tr>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            </tr>
+    </table>
+
+    <br><br>
+
+    <h2>Tablas stock disponible</h2>
+
+    <table>
+        <h3>Ingredientes panes</h3>
+
+        <tr>
+            <th>Harina</th>
+            <th>Leche pasteurizada</th>
+            <th>Huevos</th>
+            <th>Azúcar</th>
+            <th>Mantequilla</th>
+            <th>Esencia Vainilla</th>
+            <th>Cocoa</th>
+            <th>Tablillas Chocolate</th>
+            <th>Esencia Vainilla</th>
+            <th>Naranjas</th>
+        </tr>
+        <tr>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+        </tr>
+    </table>
+
+    <table>
+        <h3>Ingredientes bases</h3>
+
+        <tr>
+            <th>Leche pasteurizada</th>
+            <th>Leche evaporada</th>
+            <th>Leche condensada</th>
+            <th>Licor de café</th>
+            <th>Licor de naranja</th>
+            <th>Crema irlandesa</th>
+        </tr>
+        <tr>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+        </tr>
+    </table>
+
+    <table>
+        <h3>Ingredientes rellenos</h3>
+
+        <tr>
+            <th>Fresas</th>
+            <th>Duraznos</th>
+            <th>Nueces</th>
+            <th>Cocoa</th>
+            <th>Tablillas de chocolate</th>
+            <th>Mermelada de fresa</th>
+            <th>Dulce de leche</th>
+        </tr>
+        <tr>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+        </tr>
+    </table>
+
+    <table>
+        <h3>Ingredientes decorados</h3>
+
+        <tr>
+            <th>Crema chantilly</th>
+            <th>Esencia de vainilla</th>
+            <th>Cocoa</th>
+            <th>Tablillas de chocolate</th>
+            <th>Azúcar</th>
+            <th>Grenetina</th>
+            <th>Jarabe de fructuosa</th>
+            <th>Glicerina</th>
+            <th>Manteca vegetal</th>
+            <th>Leche pasteurizada</th>
+            <th>Azúcar glass</th>
+            <th>Limones</th>
+            <th>Fresas</th>
+            <th>Duraznos</th>
+            <th>Nueces</th>
+        </tr>
+        <tr>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+        </tr>
+    </table>
+
+    <table>
+        <h3>Stock moldes</h3>
+
+        <tr>
+            <th>1/8 de plancha</th>
+            <th>1/4 de plancha</th>
+            <th>1/2 plancha</th>
+            <th>3/4 de plancha</th>
+            <th>Plancha completa </th>
+        </tr>
+        <tr>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+            <td>Número</td>
+        </tr>
+    </table>
+
+
+    </article>
+    </section>
+
+    </form>
+
+    <footer>
+        <h2>Pastelería Dulce Gala</h2>
+        <p>Naucalpan de Juárez, Estado de México.
+        <b>Teléfono preparaciones: (55)-5345-2518 ext 100</p>
+    </footer>
+
+</body>
+
+</html>
